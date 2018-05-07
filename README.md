@@ -11,6 +11,10 @@ In thi sapplication there are three majior parts
             5. getFavouritImages - GET method
             6. saveImages - POST method
             7. getRandomImageSet - GET Method
+            
+            here I have added API endpoint postman collection, Link is below
+            link => https://documenter.getpostman.com/view/1417327/imagefinder/RW1gDc8f
+            Download link => https://drive.google.com/open?id=12HJ0OkXgcf4nYFEotCYYMR0VvLX4-mP2
 
 2> Backend web application
       Here I have developed php backend with the Laravel Framework and I have used many libries to perform some funtions
@@ -28,8 +32,33 @@ In thi sapplication there are three majior parts
         Here I have used Bootstrap and Ajax to make the front end
         
 How to execute the code
-
 step 1:
+              setup the database and laravel framework
+              database is uploaded to my googledrive, Download tha db through the link below
+              https://drive.google.com/open?id=17zT_eBabmOficEL_AQAtGeNf_tjRpLcJ
+              after adding composer.json file to your development environment run the code below
+              
+              composer update
+              
+step 2:       configure the .env file 
+                        
+                        APP_NAME="ImageFinder"
+                        APP_ENV=local
+                        APP_KEY=base64:46/ZFwyPk8sc2nTCH2L1CIObJamDrtf1qd9s5s1SoVg=
+                        APP_DEBUG=true
+                        APP_URL=http://localhost
+
+                        LOG_CHANNEL=stack
+
+                        DB_CONNECTION=mysql
+                        DB_HOST=127.0.0.1
+                        DB_PORT=3306
+                        DB_DATABASE=imagefinder
+                        DB_USERNAME=root2
+                        DB_PASSWORD=root
+                        
+                 specially add your database host ip address, database name , database username and password correctly.
+step 3:
               run the code with php artisan command
                         
                         php artisan serve
@@ -37,6 +66,6 @@ step 1:
                         output =>   C:\wamp64\www\ImageFinder>php artisan serve
                                     Laravel development server started: <http://127.0.0.1:8000>
 
-                                    
+                                  
  
  
