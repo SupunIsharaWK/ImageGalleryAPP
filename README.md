@@ -27,21 +27,27 @@ In thi sapplication there are three majior parts
              unsplash/unsplash -> ^2.4
              shweshi/laravel-unsplash-wrapper -> ^3.0    
                   
-       this libry is very important to handle various endpoints which is provided by the unsplash api
+   this libry is very important to handle various endpoints which is provided by the unsplash api
        
  3> Frontend 
         Here I have used Bootstrap and Ajax to make the front end
         
 How to execute the code
+
 step 1:
-              setup the database and laravel framework
-              database is uploaded to my googledrive, Download tha db through the link below
+
+  setup the database and laravel framework
+  database is uploaded to my googledrive, Download tha db through the link below
+              
               https://drive.google.com/open?id=17zT_eBabmOficEL_AQAtGeNf_tjRpLcJ
-              after adding composer.json file to your development environment run the code below
+              
+              
+  after adding composer.json file to your development environment run the code below
               
               composer update
               
-step 2:       configure the .env file 
+step 2:      
+   configure the .env file 
                         
                         APP_NAME="ImageFinder"
                         APP_ENV=local
@@ -58,7 +64,8 @@ step 2:       configure the .env file
                         DB_USERNAME=root2
                         DB_PASSWORD=root
                         
-                 specially add your database host ip address, database name , database username and password correctly.
+   specially add your database host ip address, database name , database username and password correctly.
+   
 step 3:
               run the code with php artisan command
                         
