@@ -27,6 +27,16 @@ In thi sapplication there are three majior parts
  3> Frontend 
         Here I have used Bootstrap and Ajax to make the front end
         
-        
+How to execute the code
+
+step 1:
+              run the code with php artisan command
+                        
+                        php artisan serve
+                        
+                        output =>   C:\wamp64\www\ImageFinder>php artisan serve
+                                    Laravel development server started: <http://127.0.0.1:8000>
+
+                                    
  
  
