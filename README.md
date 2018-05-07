@@ -2,8 +2,8 @@
 This app is created for taking images from unsplash web server via its api
 
 In thi sapplication there are three majior parts 
-1> Backend API to get unsplash images and save them in local database server
-      in here I have implemented some api endpoints
+
+1> Backend API to get unsplash images and save them in local database server in here I have implemented some api endpoints
             1. getImages - GET method
             2. getImagesByID - GET method
             3. deleteImagesByID - DELETE method
