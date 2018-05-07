@@ -7,6 +7,7 @@ use App\UnsplashImage;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use function json_decode;
+use function response;
 
 
 class UnsplashImageController extends ApiController
@@ -26,7 +27,7 @@ class UnsplashImageController extends ApiController
     /**
      * Store a newly created resource in storage.
      *
-     * @return void
+     * @return \Illuminate\Http\JsonResponse
      */
     public function saveImages()
     {
@@ -57,10 +58,9 @@ class UnsplashImageController extends ApiController
      */
     public function getRandomImagesSet()
     {
-        //$url = 'https://api.unsplash.com/photos/?client_id=0adca50653c5a1e1a1529cc947d0430f4856e79b698d97fd57bc7d13744658cd';
-        $url2 = 'https://api.unsplash.com/photos/random?client_id=0adca50653c5a1e1a1529cc947d0430f4856e79b698d97fd57bc7d13744658cd&count=20';
+        $url = 'https://api.unsplash.com/photos/random?client_id=0adca50653c5a1e1a1529cc947d0430f4856e79b698d97fd57bc7d13744658cd&count=20';
         $client = new Client();
-        $decode_json = $client->get($url2)->getBody();
+        $decode_json = $client->get($url)->getBody();
         $image = json_decode($decode_json);
         return $image;
     }
