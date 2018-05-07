@@ -13,16 +13,17 @@ In thi sapplication there are three majior parts
             7. getRandomImageSet - GET Method
 
 2> Backend web application
-      Here I have developed php backend with the Laravel Framework 
-            laravel version - 5.6.*
-            php version - 7.19
+      Here I have developed php backend with the Laravel Framework and I have used many libries to perform some funtions
             
-      and I have used many libries to perform some funtions
+             laravel version - 5.6.*
+             php version - 7.19
              fideloper/proxy -> ~4.0
              guzzlehttp/guzzle -> ^6.3
              unsplash/unsplash -> ^2.4
              shweshi/laravel-unsplash-wrapper -> ^3.0    
-                  this libry is very important to handle various endpoints which is provided by the unsplash api
+                  
+       this libry is very important to handle various endpoints which is provided by the unsplash api
+       
  3> Frontend 
         Here I have used Bootstrap and Ajax to make the front end
         
