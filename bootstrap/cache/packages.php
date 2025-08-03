@@ -1,18 +1,4 @@
 <?php return array (
-  'fideloper/proxy' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
-    ),
-  ),
-  'hedii/artisan-log-cleaner' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Hedii\\ArtisanLogCleaner\\ArtisanLogCleanerServiceProvider',
-    ),
-  ),
   'laravel/passport' => 
   array (
     'providers' => 
@@ -34,6 +20,13 @@
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
     ),
   ),
+  'nesbot/carbon' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Carbon\\Laravel\\ServiceProvider',
+    ),
+  ),
   'nunomaduro/collision' => 
   array (
     'providers' => 
@@ -41,26 +34,22 @@
       0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
     ),
   ),
-  'shweshi/laravel-unsplash-wrapper' => 
+  'nunomaduro/termwind' => 
   array (
     'providers' => 
     array (
-      0 => 'shweshi\\LaravelUnsplashWrapper\\Providers\\UnsplashServiceProvider',
-      1 => 'shweshi\\LaravelUnsplashWrapper\\Providers\\UnsplashUsersServiceProvider',
-      2 => 'shweshi\\LaravelUnsplashWrapper\\Providers\\UnsplashPhotosServiceProvider',
-      3 => 'shweshi\\LaravelUnsplashWrapper\\Providers\\UnsplashCollectionsServiceProvider',
-      4 => 'shweshi\\LaravelUnsplashWrapper\\Providers\\UnsplashSearchServiceProvider',
+      0 => 'Termwind\\Laravel\\TermwindServiceProvider',
     ),
   ),
   'spatie/laravel-fractal' => 
   array (
+    'aliases' => 
+    array (
+      'Fractal' => 'Spatie\\Fractal\\Facades\\Fractal',
+    ),
     'providers' => 
     array (
       0 => 'Spatie\\Fractal\\FractalServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Fractal' => 'Spatie\\Fractal\\FractalFacade',
     ),
   ),
   'spatie/laravel-query-builder' => 

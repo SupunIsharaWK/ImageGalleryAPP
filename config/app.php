@@ -99,7 +99,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | This key is used by the Illuminate encrypter service and should be set
-    | to a random, 32 character string, otherwise these encrypted strings
+    | to a random, 32-character string, otherwise these encrypted strings
     | will not be safe. Please do this before deploying an application!
     |
     */
@@ -159,14 +159,6 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
-
-        shweshi\LaravelUnsplashWrapper\Providers\UnsplashServiceProvider::class,
-        shweshi\LaravelUnsplashWrapper\Providers\UnsplashSearchServiceProvider::class,
-        shweshi\LaravelUnsplashWrapper\Providers\UnsplashUsersServiceProvider::class,
-        shweshi\LaravelUnsplashWrapper\Providers\UnsplashPhotosServiceProvider::class,
-        shweshi\LaravelUnsplashWrapper\Providers\UnsplashCollectionsServiceProvider::class,
-
     ],
 
     /*
@@ -214,13 +206,7 @@ return [
         'Storage' => Illuminate\Support\Facades\Storage::class,
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
-        'View' => Illuminate\Support\Facades\View::class,
-        'UnsplashSearch' => shweshi\LaravelUnsplashWrapper\Facades\UnsplashSearchFacade::class,
-        'UnsplashUsers' => shweshi\LaravelUnsplashWrapper\Facades\UnsplashUsersFacade::class,
-        'UnsplashPhotos' => shweshi\LaravelUnsplashWrapper\Facades\UnsplashPhotosFacade::class,
-        'UnsplashCollections' => shweshi\LaravelUnsplashWrapper\Facades\UnsplashCollectionsFacade::class,
-
-
+        'View' => Illuminate\Support\Facades\View::class
     ],
 
 ];

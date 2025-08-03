@@ -1,11 +1,75 @@
-vendor/
-node_modules/
-npm-debug.log
+# =====================================
+# Laravel Project: .gitignore Template
+# =====================================
 
-# Laravel 4 specific
+# -------------------------------------
+# Node & Composer Dependencies
+# -------------------------------------
+/vendor/
+/node_modules/
+
+# -------------------------------------
+# Laravel Configuration Files
+# -------------------------------------
+.env
+.env.*
+.phpunit.result.cache
+composer.lock
+Homestead.json
+Homestead.yaml
+
+# -------------------------------------
+# Laravel Storage & Cache
+# -------------------------------------
+/public/storage
+/storage/*.key
+/storage/app/public
+/storage/framework/cache/data
+/storage/framework/sessions
+/storage/framework/testing
+/storage/framework/views
+/storage/logs
+
+# -------------------------------------
+# IDEs & Editor Files
+# -------------------------------------
+.idea/
+/.vscode/
+/.vscode/*
+!.vscode/settings.json
+*.sublime-project
+*.sublime-workspace
+
+# -------------------------------------
+# OS & Temporary Files
+# -------------------------------------
+.DS_Store
+ehthumbs.db
+Thumbs.db
+*.swp
+*.bak
+*.tmp
+*.log
+
+# -------------------------------------
+# NPM/Yarn Logs
+# -------------------------------------
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# -------------------------------------
+# Docker/Sail (optional)
+# -------------------------------------
+docker-compose.override.yml
+
+# -------------------------------------
+# Legacy Laravel 4 (optional)
+# -------------------------------------
 bootstrap/compiled.php
 app/storage/
 
-
-# Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
+# -------------------------------------
+# Rocketeer (optional PHP deploy tool)
+# -------------------------------------
 .rocketeer/
